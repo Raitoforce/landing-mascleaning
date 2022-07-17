@@ -67,3 +67,5 @@ controls.next.addEventListener("click", () => {
 controls.prev.addEventListener("click", () => {
   setCurrentPresentation(false);
 });
+
+renderPresentation(presentations[0]);
