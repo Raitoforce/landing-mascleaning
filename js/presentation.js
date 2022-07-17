@@ -13,7 +13,7 @@ const currentPresentorElements = {
 const presentations = [
   {
     title: "Concentrado",
-    img: "../img/mascleaning/concentrados.png",
+    img: "./img/mascleaning/concentrados.png",
     text: `El <em>CONCENTRADO Más Cleaning</em> revoluciona 
         la limpieza del hogar, oficina y negocio, 
         porque crece y se multiplica con su fórmula 
@@ -23,7 +23,7 @@ const presentations = [
   },
   {
     title: "BIDÓN 20 L",
-    img: "../img/mascleaning/bidon.png",
+    img: "./img/mascleaning/bidon.png",
     text: `El <em>Bidón Grupo Más Cleaning</em> de 20 litros de 
     producto terminado, revoluciona la limpieza 
     del hogar, oficina y negocio, rinde hasta 240 
@@ -32,7 +32,7 @@ const presentations = [
   },
   {
     title: `PAQUETE DE BOTELLA (1L)`,
-    img: "../img/mascleaning/paquete_litro.png",
+    img: "./img/mascleaning/paquete_litro.png",
     text: `El <em>paquete de 24 pzs Grupo Más Cleaning</em> de 20 
     litros de producto Mas Cleaning terminado, revoluciona la limpieza del hogar, oficina y negocio, 
     rinde hasta 240 cargas. Contamos con una gran 
