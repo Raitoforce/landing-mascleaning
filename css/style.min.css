@@ -565,6 +565,7 @@ section {
   background: var(--carolina-blue);
   background: linear-gradient(90deg, var(--middle-blue) 0%, var(--carolina-blue) 100%);
   transition: all .3s ease-in-out 0s !important;
+  color: #eee;
 }
 
 .feature-img h4 {

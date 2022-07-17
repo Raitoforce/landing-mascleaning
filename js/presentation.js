@@ -48,17 +48,34 @@ const renderPresentation = ({ title, img, text }) => {
   currentPresentorElements.title.innerHTML = title;
 };
 
+let timeout;
+
 const setCurrentPresentation = (next = true) => {
-  if (next && indexPresentation < presentations.length - 1) {
-    indexPresentation++;
+  if (next) {
+    if (indexPresentation < presentations.length - 1) {
+      indexPresentation++;
+    } else {
+      indexPresentation = 0;
+    }
+    if (!!timeout) {
+      clearTimeout(timeout);
+    }
   }
 
-  if (!next && indexPresentation > 0) {
-    indexPresentation--;
+  if (!next) {
+    if (indexPresentation > 0) {
+      indexPresentation--;
+    } else {
+      indexPresentation = presentations.length - 1;
+    }
+    if (!!timeout) {
+      clearTimeout(timeout);
+    }
   }
   const currPresentation = presentations[indexPresentation];
-  console.log({ indexPresentation, currPresentation });
+  // console.log({ indexPresentation, currPresentation });
   renderPresentation(currPresentation);
+  autoMovePresentation();
 };
 
 controls.next.addEventListener("click", () => {
@@ -69,3 +86,10 @@ controls.prev.addEventListener("click", () => {
 });
 
 renderPresentation(presentations[0]);
+autoMovePresentation();
+
+function autoMovePresentation() {
+  timeout = setTimeout(() => {
+    setCurrentPresentation(true);
+  }, 8_000);
+}
