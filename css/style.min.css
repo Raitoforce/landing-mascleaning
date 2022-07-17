@@ -1067,3 +1067,82 @@ section {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
+.presentations {
+  min-height: 40rem;
+  background-image: linear-gradient(to right, rgba(4, 161, 214, 0.85), rgba(36, 73, 154, 0.85)), url(../img/mascleaning/fondo_index.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.presentation__container {
+  width: 66%;
+  margin-left: auto;
+  margin-right: 10rem;
+  padding: 10rem 8rem;
+  display: flex;
+  color: #eee;
+  flex-wrap: wrap;
+}
+
+.presentations__img {
+  flex: 1 0 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentations__img>img {
+  width: 100%;
+}
+
+.presentations__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 2rem;
+}
+
+.presentation__title {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.presentation__text {
+  font-size: 1.4rem;
+}
+
+.presentation__text em {
+  font-weight: 450;
+  font-style: normal;
+}
+
+.controls {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  display: flex;
+  gap: 1rem;
+  transform: translate(-50%, 0);
+}
+
+.controls .btn {
+  background: var(--carolina-blue);
+  color: #eee;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.presentations__title {
+  position: absolute;
+  top: 6rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #eee;
+  text-align: center;
+}
