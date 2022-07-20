@@ -1147,3 +1147,26 @@ section {
   color: #eee;
   text-align: center;
 }
+
+
+.title-portafolio {
+  font-size: 2rem;
+  color: var(--cobalt-blue);
+  font-weight: 700;
+}
+
+.subtitle-portafolio {
+  font-size: 1.5rem;
+  color: var(--cobalt-blue);
+  font-weight: 400;
+}
+
+#lightcase-overlay {
+  background: var(--french-blue);
+}
+
+html[data-lc-type=image] #lightcase-content,
+html[data-lc-type=video] #lightcase-content {
+  background: none;
+  box-shadow: none;
+}
