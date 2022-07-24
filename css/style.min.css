@@ -563,10 +563,14 @@ section {
 ================================*/
 .feature-item {
   height: 35rem;
-  background: var(--carolina-blue);
   background: linear-gradient(90deg, var(--middle-blue) 0%, var(--carolina-blue) 100%);
+  background: #eee;
   transition: all .3s ease-in-out 0s !important;
-  color: #eee;
+  color: #000;
+}
+
+#features {
+  background: linear-gradient(90deg, var(--middle-blue) 0%, var(--carolina-blue) 100%) !important;
 }
 
 .feature-img h4 {
