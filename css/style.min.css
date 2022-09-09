@@ -562,10 +562,15 @@ section {
 =            FEATURES            =
 ================================*/
 .feature-item {
-  background: var(--carolina-blue);
+  height: 35rem;
   background: linear-gradient(90deg, var(--middle-blue) 0%, var(--carolina-blue) 100%);
+  background: #eee;
   transition: all .3s ease-in-out 0s !important;
-  color: #eee;
+  color: #000;
+}
+
+#features {
+  background: linear-gradient(90deg, var(--middle-blue) 0%, var(--carolina-blue) 100%) !important;
 }
 
 .feature-img h4 {
@@ -1082,7 +1087,7 @@ section {
 }
 
 .presentation__container {
-  width: 66%;
+  width: 62%;
   margin-left: auto;
   margin-right: 10rem;
   padding: 10rem 8rem;
@@ -1105,9 +1110,9 @@ section {
 .presentations__body {
   flex: 1;
   display: flex;
+  padding: 5rem 2rem;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 2rem;
 }
 
 .presentation__title {
@@ -1126,24 +1131,60 @@ section {
 
 .controls {
   position: absolute;
-  top: 2rem;
+  top: 6rem;
   left: 50%;
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
   transform: translate(-50%, 0);
 }
 
-.controls .btn {
-  background: var(--carolina-blue);
-  color: #eee;
-  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.15);
+.controls-after,
+.controls-prev {
+  width: 10rem;
+  height: 3.5rem;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  border: none;
+  background-position: center;
+  cursor: pointer;
+}
+
+.controls-after {
+  background: url(../img/mascleaning/despues.svg);
+}
+
+.controls-prev {
+  background: url(../img/mascleaning/anterior.svg);
 }
 
 .presentations__title {
   position: absolute;
-  top: 6rem;
+  top: 2rem;
   font-weight: 700;
   font-size: 2rem;
   color: #eee;
   text-align: center;
+}
+
+
+.title-portafolio {
+  font-size: 2rem;
+  color: var(--cobalt-blue);
+  font-weight: 700;
+}
+
+.subtitle-portafolio {
+  font-size: 1.5rem;
+  color: var(--cobalt-blue);
+  font-weight: 400;
+}
+
+#lightcase-overlay {
+  background: #4fb2c9;
+}
+
+html[data-lc-type=image] #lightcase-content,
+html[data-lc-type=video] #lightcase-content {
+  background: none;
+  box-shadow: none;
 }
